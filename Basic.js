@@ -83,5 +83,69 @@ for (let i = 0; i < n; i++) {
 }
 
 
+let n3 = 4;
+for (let i = 0; i < n; i++) {
+  let row = "";
+  for (let j = 0; j <= i; j++) {
+    row += (j + 1);
+  }
+  console.log(row);
+}
+
+let n4 = 4;
+for (let i = 0; i < n; i++) {
+  let row = "";
+  for (let j = 0; j <= i; j++) {
+    row += (i + 1);
+  }
+  console.log(row);
+}
+
+
+let n5 = 4;
+for (let i = 0; i < n; i++) {
+  let row = "";
+  for (let j = 0; j < n - i; j++) {
+    row += (j + 1);
+  }
+  console.log(row);
+}
+
+let n6 = 4;
+for (let i = 0; i < n; i++) {
+  let row = "";
+  for (let j = 0; j < n - (i + 1); j++) {
+    row += " ";
+  }
+  for (let k = 0; k < i + 1; k++) {
+    row += "*";
+  }
+  console.log(row);
+}
+
+
+
+let n7 = 4;
+for (let i = 0; i < n; i++) {
+  let row = "";
+  let toggle = 1;
+  for (let j = 0; j < i + 1; j++) {
+    row += toggle;
+    toggle = toggle === 1 ? 0 : 1;
+  }
+  console.log(row);
+}
+
+
+let n8 = 4;
+let toggle = 1;
+for (let i = 0; i < n; i++) {
+  let row = "";
+  for (let j = 0; j < i + 1; j++) {
+    row += toggle;
+    toggle = toggle === 1 ? 0 : 1;
+  }
+  console.log(row);
+}
 
 
